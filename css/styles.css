@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --max-widht: 1400px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  align-items: center;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  font-family: "Overpass", sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.card {
+  border-radius: 15px;
+  padding: 1.6rem;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(215, 20%, 17%),
+    hsl(217, 28%, 13%)
+  );
+  width: 90%;
+  max-width: 350px;
+}
+
+.card-header {
+  margin-bottom: 1rem;
+}
+
+.card-header img {
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+
+.card-title {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+
+.card-description {
+  color: var(--medium-grey);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.card-ratings {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.card-rating {
+  align-items: center;
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  color: var(--light-grey);
+  cursor: pointer;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  height: 1rem;
+  justify-content: center;
+  line-height: 1rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  width: 1rem;
+}
+
+.card-rating:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.card-btn {
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.card-btn:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
